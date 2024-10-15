@@ -1,8 +1,7 @@
-import ApplicationLogo from '@/Components/ApplicationLogo';
 import Dropdown from '@/Components/Dropdown';
 import NavLink from '@/Components/NavLink';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
-import { Link, usePage } from '@inertiajs/react';
+import { usePage } from '@inertiajs/react';
 import { PropsWithChildren, ReactNode, useState } from 'react';
 
 export default function AuthenticatedLayout({
@@ -48,6 +47,12 @@ export default function AuthenticatedLayout({
                                     active={route().current('project.index')}
                                 >
                                     Project
+                                </NavLink>
+                                <NavLink
+                                    href={route('project.index')}
+                                    active={route().current('createProject.index')}
+                                >
+                                    CreateProject
                                 </NavLink>
                             </div>
                         </div>
