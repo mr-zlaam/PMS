@@ -49,8 +49,8 @@ export default function AuthenticatedLayout({
                                     Project
                                 </NavLink>
                                 <NavLink
-                                    href={route('project.index')}
-                                    active={route().current('createProject.index')}
+                                    href={route('createProject.create')}
+                                    active={route().current('createProject.create')}
                                 >
                                     CreateProject
                                 </NavLink>
