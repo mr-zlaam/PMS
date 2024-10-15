@@ -4,7 +4,7 @@ export interface Task {
   description: string;
   created_at: string;
   due_date: string;
-  status: 'pending' | 'completed' | 'in_progress';
+  status: "pending" | "completed" | "in_progress";
   image_path: string;
   created_by: number;
   updated_by: number;

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string("name");
             $table->longText("description")->nullable();
             $table->timestamp("due_date")->nullable();
-            $table->string('status');
+            $table->enum('status', ['pending', 'in_progress', 'completed'])->default('pending');
             $table->string('image_path')->nullable();
             $table->foreignId('created_by')->constrained('users');
             $table->foreignId('updated_by')->constrained('users');
