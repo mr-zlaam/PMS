@@ -2,6 +2,7 @@ import Dropdown from "@/Components/Dropdown";
 import NavLink from "@/Components/NavLink";
 import ResponsiveNavLink from "@/Components/ResponsiveNavLink";
 import { usePage } from "@inertiajs/react";
+import axios from "axios";
 import { PropsWithChildren, ReactNode, useState } from "react";
 
 export default function AuthenticatedLayout({

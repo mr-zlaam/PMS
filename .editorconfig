@@ -2,6 +2,7 @@ root = true
 
 [*]
 charset = utf-8
+singleQuote=false
 end_of_line = lf
 indent_size = 2
 indent_style = space
@@ -15,6 +16,7 @@ indent_size = 2
 
 [docker-compose.yml]
 indent_size = 2
+
 
 [*.{ts,tsx,js,jsx,json,html,css,scss,sass,php,py,rb,java,go,md,yml,yaml}]
 indent_size=2

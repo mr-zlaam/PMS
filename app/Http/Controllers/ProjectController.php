@@ -6,6 +6,7 @@ use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
 use App\Http\Resources\ProjectResource;
 use App\Models\Project;
+use Illuminate\Contracts\Cache\Store;
 
 class ProjectController extends Controller
 {
@@ -32,9 +33,14 @@ class ProjectController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(StoreProjectRequest $request)
+
     {
-        //
+        $data = $request->validated();
+        dd($data);
+        // Project::create($data);
+        // return to_route(route('project.index'));
     }
+
 
     /**
      * Display the specified resource.
