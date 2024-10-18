@@ -28,7 +28,13 @@ function CreateProject() {
     e.preventDefault()
     const { description, due_date, image_url, name, status } = formData
     console.log(description, due_date, image_url, name, status);
+    if (!description || !due_date || !image_url || !name || !status) {
+      return alert('Please fill all the fields')
+    }
   }
+
+
+
   return (
     <AuthenticatedLayout>
       <Head title="CreateProject" />
