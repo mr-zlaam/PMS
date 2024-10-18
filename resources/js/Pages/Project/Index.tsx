@@ -2,7 +2,7 @@ import Pagination from "@/Components/Pagination";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { TaskResponse } from "@/types";
 import { Head, Link } from "@inertiajs/react";
-import { } from "react";
+import {} from "react";
 
 function Index({ projects }: { projects: TaskResponse }) {
   return (
@@ -41,19 +41,20 @@ function Index({ projects }: { projects: TaskResponse }) {
 
                         <td className="px-3 py-2 ">
                           <span
-                            className={`${data.status === "pending"
-                              ? "bg-red-600"
-                              : data.status === "in_progress"
+                            className={`${
+                              data.status === "pending"
+                                ? "bg-red-600"
+                                : data.status === "in_progress"
                                 ? "bg-yellow-500 text-gray-700"
                                 : data.status === "completed" &&
-                                "bg-green-500 font-bold text-gray-800"
-                              } inline-block px-3 py-1.5 rounded-full`}
+                                  "bg-green-500 font-bold text-gray-800"
+                            } inline-block px-3 py-1.5 rounded-full`}
                           >
                             {data.status === "pending"
                               ? "Pending"
                               : data.status === "in_progress"
-                                ? "In Progress"
-                                : "Completed"}
+                              ? "In Progress"
+                              : "Completed"}
                           </span>
                         </td>
 
